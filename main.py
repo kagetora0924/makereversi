@@ -9,6 +9,8 @@ while(not enter_pressed):
     if(input() == ""):
         enter_pressed = True
 
+reversi_game = Game()
+"""
 print("press 'b' to play as black, 'w' to play as white")
 bw_pressed = False
 turn = ""
@@ -18,7 +20,9 @@ while(not bw_pressed):
         bw_pressed = True
         turn = pressed
 
+
 if(turn == 'b'):
     reversi_game = Game(black)
 else:
     reversi_game = Game(white)
+"""

@@ -31,7 +31,26 @@ class Board():
             return False
         return True
 
-    def adjacent_opponent(self, move_made):
-        #search for adjacent opponent's stone and return ...?
+    @property
+    def direction(self, index):
+        """
+        direction to help make search methods easier.
+        012
+        3 4
+        567
+        above shows which index means which direction.
+        returns a list of two numbers, -1 or 0 or 1, each indicating
+        "i" direction increments and "j" direction increments.
+        e.g. direction(0) returns [-1,-1]
+        direction(6) returns [1,0]
+        direction(4) returns [0,1]
+        """
+
+
+    def search_adjacent_opponent(self, move_made):
+        #search for an adjacent opponent's stone and return a list of
+        #direction.
     
-    def direction()
+    def search_sandwiched(self, move_made, direction):
+        #search for my stone in the direction of an adjacent opponent's stone.
+        #If found, return a list of direction.
